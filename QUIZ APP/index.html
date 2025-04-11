@@ -1,30 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QUIZ APP</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>AI Quiz App</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="container">
-        <h1>QUIZ APP</h1>
-        <div id="quiz-container">
-            <div id="question-container" class="hidden">
-                <h2 id="question-text"></h2>
-                <ul id="choices-list">
-                    <!-- Choices will be dynamically added here -->
-                </ul>
-                <button id="next-btn" class="hidden">Next Question</button>
-            </div>
-            <div id="result-container" class="hidden">
-                <h2>Your Score:</h2>
-                <p id="score"></p>
-                <button id="restart-btn">Restart Quiz</button>
-            </div>
-            <button id="start-btn">Start Quiz</button>
-        </div>
+<div class="container">
+    <h1>AI Quiz App</h1>
+
+    <div id="topic-container">
+    <h2>Select a Topic:</h2>
+    <select id="topic-select">
+        <option value="9">General Knowledge</option>
+        <option value="17">Science & Nature</option>
+        <option value="23">History</option>
+        <option value="21">Sports</option>
+        <option value="22">Geography</option>
+        <option value="18">Computer Science</option>
+    </select>
+    <button id="start-btn">Start Quiz</button>
     </div>
-    <script src="scripts.js"></script>
+
+    <div id="quiz-container" class="hidden">
+    <div id="question-container">
+        <h2 id="question-text"></h2>
+        <ul id="choices-list"></ul>
+        <button id="next-btn" class="hidden">Next Question</button>
+    </div>
+
+    <div id="result-container" class="hidden">
+        <h2>Your Score:</h2>
+        <p id="score"></p>
+        <button id="restart-btn">Restart Quiz</button>
+    </div>
+    </div>
+</div>
+<script src="scripts.js"></script>
 </body>
 </html>
